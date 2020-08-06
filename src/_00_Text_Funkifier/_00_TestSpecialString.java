@@ -21,6 +21,7 @@ public class _00_TestSpecialString {
 		SpecialString bs = new BackwardsString("This is a test");
 		System.out.println(bs);
 		assertEquals("tset a si sihT", bs.toString());
+	
 	}
 	
 	//3. Fill in the funkifyTxt method in the MixedCapsString class
@@ -38,6 +39,16 @@ public class _00_TestSpecialString {
 	//   the JUnitTest case below to test your customized Special String.
 	@Test
 	public void testCustomString() {
+		SpecialString us = new UpperString("This is a test");
+		System.out.println(us);
+		assertEquals("THIS IS A TEST", us.toString());
+	
+	}
+	@Test
+	public void testOtherCustomString() {
+		SpecialString ls = new LowerString("This is a test");
+		System.out.println(ls);
+		assertEquals("this is a test", ls.toString());
 	
 	}
 }
